@@ -50,7 +50,7 @@
       },
       {
         "type": "field",
-        "outboundTag": "direct",
-		    "network": "tcp,udp"
+	"port": "0-65535",
+        "outboundTag": "direct"
       }
 ]
