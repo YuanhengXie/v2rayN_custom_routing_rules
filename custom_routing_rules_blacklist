@@ -17,6 +17,18 @@
   },
   {
     "type": "field",
+    "outboundTag": "Direct",
+    "domain": 
+    [
+      "geosite:private",
+      "geosite:apple-cn",
+      "geosite:google-cn",
+      "geosite:tld-cn",
+      "geosite:category-games@cn"
+    ]
+  },
+  {
+    "type": "field",
     "outboundTag": "proxy",
     "domain": 
     [
@@ -115,16 +127,7 @@
   },
   {
     "type": "field",
-    "port": "0-65535",
     "outboundTag": "direct",
-    "domain": 
-    [
-      "geosite:cn",
-      "geosite:private",
-      "geosite:apple-cn",
-      "geosite:google-cn",
-      "geosite:tld-cn",
-      "geosite:category-games@cn"
-    ]
+    "network": "tcp,udp"
   }
 ]
