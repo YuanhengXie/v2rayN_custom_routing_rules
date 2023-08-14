@@ -42,7 +42,7 @@
         ],
         "enabled": true
       },
-	    {
+	  {
 		    "type": "field",
 		    "port": "",
 		    "outboundTag": "proxy",
@@ -68,9 +68,9 @@
 		      "2001:b28:f23d::/48",
 		      "2001:b28:f23f::/48",
 		      "2001:b28:f242::/48"
-     	  ]
-	    },
-	    {
+		]
+	  },
+	  {
 		    "type": "field",
 		    "port": "",
 		    "outboundTag": "proxy",
@@ -117,8 +117,8 @@
 		      "geoip:tw",
 		      "geoip:us",
 		      "geoip:vn"
-	  	  ]
-	    },
+		]
+	  },
       {
         "type": "field",
         "port": "0-65535",
