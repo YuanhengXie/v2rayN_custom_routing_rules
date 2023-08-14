@@ -1,38 +1,56 @@
-"routing": {
-  "rules": [
-    {
-      "type": "field",
-      "outboundTag": "Reject",
-      "domain": ["geosite:category-ads-all"]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Direct",
-      "domain": [
-        "geosite:private",
-        "geosite:apple-cn",
-        "geosite:google-cn",
-        "geosite:tld-cn",
-        "geosite:category-games@cn"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Proxy",
-      "domain": [
-        "geosite:geolocation-!cn",
-        "geosite:disney"
-      ]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Direct",
-      "domain": ["geosite:cn"]
-    },
-    {
-      "type": "field",
-      "outboundTag": "Direct",
-      "network": "tcp,udp"
-    }
-  ]
-}
+[
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "protocol": [
+          "bittorrent"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "block",
+        "domain": [
+          "geosite:category-ads-all"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+        "domain": [
+          "geosite:private",
+          "geosite:apple-cn",
+          "geosite:google-cn",
+          "geosite:tld-cn",
+          "geosite:category-games@cn"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "domain": [
+          "geosite:gfw",
+          "geosite:greatfire",
+          "geosite:tld-!cn",
+          "geosite:disney"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "proxy",
+        "ip": [
+          "geoip:cloudflare",
+          "geoip:cloudfront",
+          "geoip:facebook",
+          "geoip:fastly",
+          "geoip:google",
+          "geoip:netflix",
+          "geoip:telegram",
+          "geoip:twitter"
+        ]
+      },
+      {
+        "type": "field",
+        "outboundTag": "direct",
+		    "network": "tcp,udp"
+      }
+]
