@@ -5,8 +5,7 @@
     "protocol": 
     [
       "bittorrent"
-    ],
-    "enabled": true
+    ]
   },
   {
     "type": "field",
@@ -14,8 +13,7 @@
     "domain": 
     [
       "geosite:category-ads-all"
-    ],
-    "enabled": true
+    ]
   },
   {
     "type": "field",
@@ -27,8 +25,7 @@
       "geosite:tld-!cn",
       "geosite:geolocation-!cn",
       "geosite:disney"
-    ],
-    "enabled": true
+    ]
   },
   {
     "type": "field",
@@ -43,8 +40,7 @@
       "geoip:netflix",
       "geoip:telegram",
       "geoip:twitter"
-    ],
-    "enabled": true
+    ]
   },
   {
     "type": "field",
