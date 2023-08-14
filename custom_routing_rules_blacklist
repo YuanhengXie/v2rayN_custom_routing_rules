@@ -77,14 +77,6 @@
     "outboundTag": "proxy",
     "ip": 
     [
-      "geoip:cloudflare",
-      "geoip:cloudfront",
-      "geoip:facebook",
-      "geoip:fastly",
-      "geoip:google",
-      "geoip:netflix",
-      "geoip:telegram",
-      "geoip:twitter",
       "geoip:ae",
       "geoip:au",
       "geoip:br",
