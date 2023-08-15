@@ -1,0 +1,24 @@
+{
+   "servers": [
+     // 2.1 国外域名使用国外DNS查询
+     {
+       "address": "https://1.1.1.1/dns-query",
+       "domains": ["geosite:geolocation-!cn"],
+    "expectIPs": ["geoip:!cn"]
+     },
+  "8.8.8.8",
+     // 2.2 国内域名使用国内DNS查询，并期待返回国内的IP，若不是国内IP则舍弃，用下一个查询
+     {
+       "address": "223.5.5.5",
+       "domains": ["geosite:cn", "geosite:category-games@cn"],
+       "expectIPs": ["geoip:cn"]
+     },
+     // 2.3 作为2.2的备份，对国内网站进行二次查询
+     {
+       "address": "114.114.114.114",
+       "domains": ["geosite:cn"]
+     },
+     // 2.4 最后的备份，上面全部失败时，用本机DNS查询
+     "localhost"
+   ]
+ }
