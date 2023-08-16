@@ -2,7 +2,7 @@
    "servers": [
      // 2.1 国外域名使用国外DNS查询
      {
-       "address": "https://1.1.1.1/dns-query",
+       "address": "1.1.1.1",
        "domains": ["geosite:geolocation-!cn"],
        "expectIPs": ["geoip:!cn"]
      },
